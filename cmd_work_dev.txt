@@ -1,0 +1,9 @@
+ echo connected;
+ cd /usr/local/jetty/webapps;
+ rm -rf iview; 
+ mkdir iview;
+ mv dist.zip iview/;
+ cd /usr/local/jetty/webapps/iview;
+ unzip -o dist.zip ;
+ cd dist;
+ mv -f * ../ ;
